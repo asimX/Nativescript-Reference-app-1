@@ -1,0 +1,24 @@
+<Page 
+  xmlns="http://schemas.nativescript.org/tns.xsd"
+  navigatingTo="onNavigatingTo">
+
+  <Page.actionBar>
+      <ActionBar title="Date & Time Pickers">
+          <NavigationButton icon="res://ic_arrow_back" tap="goBack"/>
+      </ActionBar>
+  </Page.actionBar>
+
+
+  <ScrollView>
+    <StackLayout>
+      <label text="Time Picker"></label>
+      <timePicker hour="9" minute="25" verticalAlignment="center" horizontalAlignment="center"></timePicker>
+      <Button text="Show chosen time" tap="showTime" />
+
+      <label text="Date Picker"></label>
+      <DatePicker day="15" month="5" year="2015" verticalAlignment="center" horizontalAlignment="center"/>
+      <Button text="Show chosen date" tap="showDate" />
+    </StackLayout>
+  </ScrollView>
+
+</Page>

@@ -1,0 +1,24 @@
+<Page 
+  xmlns="http://schemas.nativescript.org/tns.xsd"
+  navigatingTo="onNavigatingTo">
+
+  <Page.actionBar>
+      <ActionBar title="Font Icons">
+          <NavigationButton icon="res://ic_arrow_back" tap="goBack"/>
+      </ActionBar>
+  </Page.actionBar>
+
+
+  <ScrollView>
+    <StackLayout>
+      <label text="&#xf429;" class="icon"></label>
+      <label text="&#xf369;" class="icon"></label>
+      <label text="&#xf38c;" class="icon"></label>
+      <label text="&#xf39e;" class="icon"></label>
+      <label text="&#xf110;" class="icon"></label>
+      <label text="&#xf316;" class="icon"></label>
+      <label text="&#xf272;" class="icon"></label>
+    </StackLayout>
+  </ScrollView>
+
+</Page>

@@ -1,0 +1,16 @@
+#headerLabel{
+    font-size: 25;
+    horizontal-align: center;
+    color:#B2EBF2;
+    margin-top: 20;
+}
+.header-template{
+    background-color:#212121;
+    height: 65;
+    width: 100%;
+}
+.body-template TextView{
+    font-size:20;
+    padding:5 15;
+    border:none;
+}

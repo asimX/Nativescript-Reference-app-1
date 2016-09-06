@@ -1,0 +1,10 @@
+.fab-button {
+    height: 70;
+    margin: 15; 
+    horizontal-align: right; 
+    vertical-align: bottom; 
+}
+
+label {
+    color: #222;
+}

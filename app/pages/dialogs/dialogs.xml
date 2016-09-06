@@ -1,0 +1,22 @@
+<Page 
+  xmlns="http://schemas.nativescript.org/tns.xsd"
+  navigatingTo="onNavigatingTo">
+
+  <Page.actionBar>
+      <ActionBar title="Dialogs">
+          <NavigationButton icon="res://ic_arrow_back" tap="goBack"/>
+      </ActionBar>
+  </Page.actionBar>
+
+
+  <ScrollView>
+    <StackLayout>
+      <Button text="Action" tap="{{ showAction }}" />
+      <Button text="Confirm" tap="{{ showConfirm }}" />
+      <Button text="Alert" tap="{{ showAlert }}" />
+      <Button text="Login" tap="{{ showLogin }}" />
+      <Button text="Prompt" tap="{{ showPrompt }}" />
+    </StackLayout>
+  </ScrollView>
+
+</Page>

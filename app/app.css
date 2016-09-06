@@ -1,0 +1,47 @@
+﻿.icon {
+    font-family: "Ionicons", ionicons;
+}
+
+
+.title {
+    font-size: 30;
+    horizontal-align: center;
+    margin: 20;
+}
+
+button {
+    font-size: 42;
+    horizontal-align: center;
+}
+
+.message {
+    font-size: 20;
+    color: #284848;
+    horizontal-align: center;
+    margin: 0 20;
+    text-align: center;
+}
+action-bar {
+  background-color: #4527a0;
+  color: white;
+  padding: 25 0 0 0; /* fix for action bar hiding under translucent statusbar **/
+}
+label {
+  margin: 20;
+}
+.drawer-content {
+  background-color: #4527a0;
+  color: white;
+  padding-top: 45;
+  width: 300;
+}
+.drawer-content label {
+  font-size: 15;
+  padding: 15 0;
+  margin: 0;
+  horizontal-align: center;
+}
+
+.selected {
+  color: #ffab00;
+}

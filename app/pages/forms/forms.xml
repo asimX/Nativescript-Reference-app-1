@@ -1,0 +1,35 @@
+<Page 
+  xmlns="http://schemas.nativescript.org/tns.xsd"
+  xmlns:CheckBox="nativescript-checkbox"
+  xmlns:dd="nativescript-drop-down"
+  navigatingTo="onNavigatingTo">
+
+  <Page.actionBar>
+      <ActionBar title="Forms">
+          <NavigationButton icon="res://ic_arrow_back" tap="{{ goBack }}"/>
+      </ActionBar>
+  </Page.actionBar>
+
+  <ScrollView>
+    <StackLayout>
+      <TextField hint="Email" text="{{ email }}" keyboardType="email" />
+      <TextField hint="Phone" text="{{ phone }}" keyboardType="phone" />
+      <TextField hint="Number" text="{{ number }}" keyboardType="number" />
+      <TextField hint="URL" text="{{ url }}" keyboardType="url" />
+      <TextField hint="Search" text="{{ search }}" returnKeyType="search" />
+      <TextField hint="Send" text="{{ send }}" returnKeyType="send" />
+      <TextField hint="Password" secure="{{ !showPassword }}" text="{{ password }}" />
+      <Switch checked="{{ showPassword }}" />
+
+      <!--<CheckBox:CheckBox checked="{{ checkProp }}" text="{{ myCheckText }}" fillColor="{{ myCheckColor }}" id="myCheckbox" />-->
+      <CheckBox:CheckBox text="CheckBox Label" checked="{{ showPassword }}" />
+
+      <GridLayout rows="auto, auto, *" columns="auto, *">
+        <dd:DropDown items="{{ items }}" selectedIndex="{{ selectedIndex }}" hint="select an item" row="0" colSpan="2" />
+        <Label text="Selected Index:" row="1" col="0" fontSize="18" verticalAlignment="bottom"/>
+        <TextField text="{{ selectedIndex }}" row="1" col="1" />
+      </GridLayout>
+    </StackLayout>
+  </ScrollView>
+
+</Page>

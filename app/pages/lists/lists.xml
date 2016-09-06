@@ -1,0 +1,60 @@
+<Page 
+  xmlns="http://schemas.nativescript.org/tns.xsd"
+  navigatingTo="onNavigatingTo">
+
+  <Page.actionBar>
+      <ActionBar title="Lists">
+          <NavigationButton icon="res://ic_arrow_back" tap="goBack"/>
+      </ActionBar>
+  </Page.actionBar>
+
+
+  <GridLayout>
+    <TabView tabsBackgroundColor="#4527a0"
+      android:cssClass="android-tab-view" 
+      color="#fff"
+      android:selectedColor="#ffab00">
+      <TabView.items>
+
+        <TabViewItem android:title="Basic">
+          <TabViewItem.view>
+            <ScrollView>
+              <StackLayout>
+<Label text="hello world"></Label>
+                <ListView items="{{ myItems }}">
+                  <ListView.itemTemplate>
+                    <Label text="{{ title }}" class="itemBody" />
+                  </ListView.itemTemplate>
+                </ListView>
+
+              </StackLayout>
+            </ScrollView>
+          </TabViewItem.view>
+        </TabViewItem>
+
+        <TabViewItem android:title="Icon">
+          <TabViewItem.view>
+            <ScrollView>
+            </ScrollView>
+          </TabViewItem.view>
+        </TabViewItem>
+
+        <TabViewItem android:title="Avatar">
+          <TabViewItem.view>
+            <ScrollView>
+            </ScrollView>
+          </TabViewItem.view>
+        </TabViewItem>
+
+        <TabViewItem android:title="No Lines">
+          <TabViewItem.view>
+            <ScrollView>
+            </ScrollView>
+          </TabViewItem.view>
+        </TabViewItem>
+        
+      </TabView.items>
+    </TabView>
+  </GridLayout>
+
+</Page>

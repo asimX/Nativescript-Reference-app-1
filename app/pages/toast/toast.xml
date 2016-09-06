@@ -1,0 +1,20 @@
+<Page 
+  xmlns="http://schemas.nativescript.org/tns.xsd"
+  navigatingTo="onNavigatingTo">
+
+  <Page.actionBar>
+      <ActionBar title="Toast">
+          <NavigationButton icon="res://ic_arrow_back" tap="goBack"/>
+      </ActionBar>
+  </Page.actionBar>
+
+
+  <ScrollView>
+    <StackLayout>
+      <TextField hint="Toast message" text="{{toastMessage}}" />
+      <Button text="Show short toast" tap="{{ showShortToast }}" />
+      <Button text="Show long toast" tap="{{ showLongToast }}" />
+    </StackLayout>
+  </ScrollView>
+
+</Page>

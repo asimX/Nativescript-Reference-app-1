@@ -1,0 +1,19 @@
+<grid-layout class="drawer-content">
+  <ScrollView>
+    <stack-layout>
+      <label text="Home" tap="navigate" class="{{ selectedPage == 'home' ? 'selected' : '' }}" />
+      <label text="Tabs" tap="navigate" class="{{ selectedPage == 'tabs' ? 'selected' : '' }}" />
+      <label text="Forms" tap="navigate" class="{{ selectedPage == 'forms' ? 'selected' : '' }}" />
+      <label text="HorizontalScrolling" tap="navigate" />
+      <label text="Dialogs" tap="navigate" />
+      <label text="Cards" tap="navigate" />
+      <label text="FAB" tap="navigate" />
+      <label text="CollapsingHeader" tap="navigate" />
+      <label text="TimeDatePicker" tap="navigate" />
+      <label text="Toast" tap="navigate" />
+      <label text="Waves" tap="navigate" />
+      <label text="Fonticons" tap="navigate" />
+      <label text="Lists" tap="navigate" />
+    </stack-layout>
+  </ScrollView>
+</grid-layout>
