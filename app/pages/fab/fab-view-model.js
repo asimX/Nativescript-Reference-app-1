@@ -1,19 +1,12 @@
 var Observable = require("data/observable").Observable;
-var listViewModule = require("ui/list-view");
-var observableArray = require("data/observable-array");
+var observableArray = require("data/observable-array").ObservableArray;
+var myItems = new observableArray([
+    { title: "hello" }
+]);
 
 function createViewModel() {
-    var viewModel = new Observable({
-        users: new ObservableArray([
-            { name: "Raymond" },
-            { name: "Eugene" },
-            { name: "Beauty" },
-            { name: "Jerome" },
-            { name: "Jennifer" },
-            { name: "Joy" },
-            { name: "Humphrey" }
-        ])
-    });
+    var viewModel = new Observable();
+    viewModel.set("myItems", myItems);
 
     return viewModel;
 }

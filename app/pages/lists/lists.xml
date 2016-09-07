@@ -18,17 +18,18 @@
 
         <TabViewItem android:title="Basic">
           <TabViewItem.view>
-            <ScrollView>
-              <StackLayout>
-<Label text="hello world"></Label>
-                <ListView items="{{ myItems }}">
-                  <ListView.itemTemplate>
-                    <Label text="{{ title }}" class="itemBody" />
-                  </ListView.itemTemplate>
-                </ListView>
+            <StackLayout>
 
-              </StackLayout>
-            </ScrollView>
+              <ListView items="{{ myItems }}" class="list">
+                <ListView.itemTemplate>
+                  <StackLayout>
+                    <Label text="{{ title }}" class="heading" />
+                    <Label text="{{ about }}" class="sub_heading" />
+                  </StackLayout>
+                </ListView.itemTemplate>
+              </ListView>
+
+            </StackLayout>
           </TabViewItem.view>
         </TabViewItem>
 

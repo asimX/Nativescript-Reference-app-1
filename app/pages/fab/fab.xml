@@ -8,20 +8,23 @@
       </ActionBar>
     </Page.actionBar>
 
-    <ScrollView>
       <GridLayout rows="auto, *">
 
-        <ListView items="{{ users }}" row="0">
-          <ListView.itemTemplate>
-            <Label text="{{ name }}" />
-          </ListView.itemTemplate>
-        </ListView>
+      <ListView items="{{ myItems }}" row="1">
+        <ListView.itemTemplate>
+          <StackLayout>
+            <Label text="{{ title }}" />
+          </StackLayout>
+        </ListView.itemTemplate>
+      </ListView>
+
+      <AbsoluteLayout row="1" cssClass="fabContainer" >
         <FAB:fab tap="fabTap"
-                  row="1"
-                  icon="res://fav"
-                  rippleColor="#f1f1f1"
-                  class="fab-button" />
-      </GridLayout>
-    </ScrollView>
+                icon="res://fav"
+                rippleColor="#f1f1f1"
+                class="fab-button" />
+      </AbsoluteLayout>
+      
+    </GridLayout>
 
 </Page>
