@@ -29,11 +29,18 @@ action-bar {
 label {
   margin: 20;
 }
+
+
+
 .drawer-content {
-  background-color: #4527a0;
-  color: white;
-  padding-top: 45;
+  background-color: #fff;
+  color: #333;
   width: 300;
+}
+.drawer-content .drawer-bg {
+  width: 300;
+  height: 180;
+  margin-bottom: 15;
 }
 .drawer-content label {
   font-size: 15;

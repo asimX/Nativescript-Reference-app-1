@@ -7,6 +7,11 @@
 
   <ActionBar title="NativeScript">
     <NavigationButton icon="res://ic_menu" tap="toggleDrawer"/>
+    <Android>
+      <ActionItem tap="gotoSearch" icon="res://ic_magnify" />
+      <ActionItem text="Profile" android.position="popup"></ActionItem>
+      <ActionItem text="Settings" android.position="popup"></ActionItem>
+    </Android>
   </ActionBar>
 
   <dpg:drawer-page.sideDrawer>

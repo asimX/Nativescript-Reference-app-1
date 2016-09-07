@@ -1,9 +1,10 @@
 <Page 
   xmlns="http://schemas.nativescript.org/tns.xsd"
+  xmlns:CheckBox="nativescript-checkbox"
   navigatingTo="onNavigatingTo">
 
   <Page.actionBar>
-      <ActionBar title="Lists">
+      <ActionBar title="Lists 2">
           <NavigationButton icon="res://ic_arrow_back" tap="goBack"/>
       </ActionBar>
   </Page.actionBar>
@@ -16,32 +17,18 @@
       android:selectedColor="#ffab00">
       <TabView.items>
 
-        <TabViewItem android:title="Basic">
+        <TabViewItem android:title="Switch">
           <TabViewItem.view>
             <StackLayout>
             
               <ListView items="{{ myItems }}" class="list">
                 <ListView.itemTemplate>
-                  <StackLayout>
-                    <Label text="{{ title }}" class="heading" />
-                    <Label text="{{ about }}" class="sub_heading" />
-                  </StackLayout>
-                </ListView.itemTemplate>
-              </ListView>
-
-            </StackLayout>
-          </TabViewItem.view>
-        </TabViewItem>
-
-        <TabViewItem android:title="Icon">
-          <TabViewItem.view>
-            <StackLayout>
-
-              <ListView items="{{ myItems }}" class="list list_icon">
-                <ListView.itemTemplate>
-                  <GridLayout columns="auto, *">
-                    <Label col="0" text="&#xf3a0;" class="icon" />
-                    <Label col="1" text="{{ title }}" class="heading" />
+                  <GridLayout columns="*, auto">
+                    <StackLayout col="0">
+                      <Label text="{{ title }}" class="heading" />
+                      <Label text="{{ about }}" class="sub_heading" />
+                    </StackLayout>
+                    <Switch checked="false" class="toggle_in_list" col="1" />
                   </GridLayout>
                 </ListView.itemTemplate>
               </ListView>
@@ -50,14 +37,14 @@
           </TabViewItem.view>
         </TabViewItem>
 
-        <TabViewItem android:title="Avatar">
+        <TabViewItem android:title="Checkbox">
           <TabViewItem.view>
             <StackLayout>
 
-              <ListView items="{{ myItems }}" class="list list_avatar">
+              <ListView items="{{ myItems }}" class="list">
                 <ListView.itemTemplate>
                   <GridLayout columns="auto, *">
-                    <image src="~/images/avatar1.png" horizontalAlignment="center" col="0" class="avatar" />
+                    <CheckBox:CheckBox text="" class="cb_in_list" checked="false" col="0" />
                     <StackLayout col="1">
                       <Label text="{{ title }}" class="heading" />
                       <Label text="{{ about }}" class="sub_heading" />
@@ -70,17 +57,21 @@
           </TabViewItem.view>
         </TabViewItem>
 
+        <TabViewItem android:title="Avatar">
+          <TabViewItem.view>
+            <StackLayout>
+
+              
+
+            </StackLayout>
+          </TabViewItem.view>
+        </TabViewItem>
+
         <TabViewItem android:title="No Lines">
           <TabViewItem.view>
             <StackLayout>
 
-              <ListView items="{{ myItems }}" class="list list_no_lines" separatorColor="#fff">
-                <ListView.itemTemplate>
-                  <StackLayout>
-                    <Label text="{{ title }}" class="heading" />
-                  </StackLayout>
-                </ListView.itemTemplate>
-              </ListView>
+              
 
             </StackLayout>
           </TabViewItem.view>

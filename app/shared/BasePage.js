@@ -22,7 +22,7 @@ BasePage.prototype.navigate = function(args) {
     animated: true,
     transition: {
       name: "slide",
-      duration: 380,
+      duration: 280,
       curve: "easeIn"
     }
   };

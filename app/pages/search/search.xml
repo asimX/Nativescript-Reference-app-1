@@ -1,0 +1,19 @@
+<Page 
+  xmlns="http://schemas.nativescript.org/tns.xsd"
+  navigatingTo="onNavigatingTo">
+
+  <Page.actionBar>
+      <ActionBar title="Search">
+          <NavigationButton icon="res://ic_arrow_back_alt" tap="goBack"/>
+          <SearchBar hint="Search"></SearchBar>
+      </ActionBar>
+  </Page.actionBar>
+
+
+  <ScrollView>
+    <StackLayout>
+      
+    </StackLayout>
+  </ScrollView>
+
+</Page>

@@ -34,3 +34,12 @@
     width: 44;
     margin-left: 20;
 }
+
+.list .cb_in_list {
+    margin-left: 10;
+}
+
+.list .toggle_in_list {
+    margin-right: 20;
+    color: #ffab00;
+}

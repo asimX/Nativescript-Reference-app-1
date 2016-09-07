@@ -1,6 +1,7 @@
 <grid-layout class="drawer-content">
   <ScrollView>
     <stack-layout>
+      <Image class="drawer-bg" src="~/images/drawer-bg.jpg" stretch="aspectFill" />
       <label text="Home" tap="navigate" class="{{ selectedPage == 'home' ? 'selected' : '' }}" />
       <label text="Tabs" tap="navigate" class="{{ selectedPage == 'tabs' ? 'selected' : '' }}" />
       <label text="Forms" tap="navigate" class="{{ selectedPage == 'forms' ? 'selected' : '' }}" />
@@ -14,6 +15,7 @@
       <label text="Waves" tap="navigate" />
       <label text="Fonticons" tap="navigate" />
       <label text="Lists" tap="navigate" />
+      <label text="Lists2" tap="navigate" />
     </stack-layout>
   </ScrollView>
 </grid-layout>

@@ -4,4 +4,6 @@
 	<color name="ns_primaryDark">#311b92</color>
 	<color name="ns_accent">#ffab00</color>
     <color name="ns_blue">#272734</color>
+    
+    <color name="white">#fff</color>
 </resources>
