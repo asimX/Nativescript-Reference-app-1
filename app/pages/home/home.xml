@@ -24,41 +24,41 @@
 
 
   <GridLayout>
-        <TabView tabsBackgroundColor="#4527a0"
-          android:cssClass="android-tab-view" 
-          color="#fff"
-          android:selectedColor="#ffab00">
-          <TabView.items>
+    <TabView tabsBackgroundColor="#4527a0"
+      android:cssClass="android-tab-view" 
+      color="#fff"
+      android:selectedColor="#ffab00">
+      <TabView.items>
 
-            <TabViewItem android:title="Tab 1">
-              <TabViewItem.view>
-                <StackLayout>
-                  <Label text="Tap the button" class="title"/>
-                  <Button text="TAP" tap="{{ onTap }}" />
-                  <Label text="{{ message }}" class="message" textWrap="true"/>
-                </StackLayout>
-              </TabViewItem.view>
-            </TabViewItem>
+        <TabViewItem android:title="Tab 1">
+          <TabViewItem.view>
+            <StackLayout>
+              <Label text="Tap the button" class="title"/>
+              <Button text="TAP" tap="{{ onTap }}" />
+              <Label text="{{ message }}" class="message" textWrap="true"/>
+            </StackLayout>
+          </TabViewItem.view>
+        </TabViewItem>
 
-            <TabViewItem android:title="Tab 2">
-              <TabViewItem.view>
-                <StackLayout>
-                    <Label text="Tab 2" cssClass="android-label"/>
-                </StackLayout>
-              </TabViewItem.view>
-            </TabViewItem>
+        <TabViewItem android:title="Tab 2">
+          <TabViewItem.view>
+            <StackLayout>
+                <Label text="Tab 2" cssClass="android-label"/>
+            </StackLayout>
+          </TabViewItem.view>
+        </TabViewItem>
 
-            <TabViewItem android:title="Tab 3">
-              <TabViewItem.view>
-                <StackLayout>
-                    <Label text="Tab 3" cssClass="android-label"/>
-                </StackLayout>
-              </TabViewItem.view>
-            </TabViewItem>
-            
-          </TabView.items>
-        </TabView>
-      </GridLayout>
+        <TabViewItem android:title="Tab 3">
+          <TabViewItem.view>
+            <StackLayout>
+                <Label text="Tab 3" cssClass="android-label"/>
+            </StackLayout>
+          </TabViewItem.view>
+        </TabViewItem>
+        
+      </TabView.items>
+    </TabView>
+  </GridLayout>
 
 </dpg:drawer-page>
 

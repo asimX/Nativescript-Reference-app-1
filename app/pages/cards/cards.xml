@@ -9,47 +9,50 @@
     </Page.actionBar>
 
     <ScrollView>
-      <StackLayout>     
-        <Card:CardView class="cardStyle" margin="10" elevation="40" radius="5">
-          <grid-layout rows="200, auto, auto" columns="auto, auto, *">
-              <image src="~/images/batman.jpg" stretch="aspectFill" colSpan="3" row="0" />
-              <label text="Batman wants to be friends?" class="info" textWrap="true" row="1" colSpan="3" />          
-              <button text="DECLINE" tap="goAway" row="2" col="0" />
-              <button text="ACCEPT" row="2" col="1" />
+      <StackLayout>  
+
+        <label text="Header cards" />
+
+        <Card:CardView class="card" margin="10" elevation="40" radius="5">
+          <StackLayout>
+            <Label class="heading" text="Header here" />
+            <Label class="body" text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum adipisci consequatur quis tenetur rerum repudiandae harum, esse aliquid minima amet. Fuga quam rerum facilis architecto, soluta nemo tenetur eveniet aliquam?" textWrap="true" />
+          </StackLayout>
+        </Card:CardView> 
+
+        <label text="Image cards" />
+
+        <Card:CardView class="card" margin="10" elevation="40" radius="5">
+          <grid-layout rows="225, auto">
+              <Image src="~/images/batman.jpg" stretch="aspectFill" row="0" />
+              <StackLayout row="1">
+                <Label text="Header here" class="heading" /> 
+                <Label class="body" text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum adipisci consequatur quis tenetur rerum repudiandae harum, esse aliquid minima amet. Fuga quam rerum facilis architecto, soluta nemo tenetur eveniet aliquam?" textWrap="true" />
+              </StackLayout>
+          </grid-layout>
+        </Card:CardView> 
+
+        <label text="Social cards" />
+
+        <Card:CardView class="card" margin="10" elevation="40" radius="5">
+          <grid-layout rows="60, 200, auto, auto" columns="auto, auto">
+
+              <Image row="0" col="0" class="avatar" src="~/images/avatar1.png"/>
+
+              <Label row="0" col="1" text="John Doe" class="username" />
+
+              <Image src="~/images/batman.jpg" stretch="aspectFill" colSpan="2" row="1" />
+
+              <StackLayout row="1" colSpan="3">
+                <Label text="Header here" class="heading" /> 
+                <Label class="body" text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum adipisci consequatur quis tenetur rerum repudiandae harum, esse aliquid minima amet. Fuga quam rerum facilis architecto, soluta nemo tenetur eveniet aliquam?" textWrap="true"/>
+              </StackLayout>
+
+              <Label row="2" col="0" text="&#xf243; TWEET" class="icon btn-1" /> 
+              <Label row="2" col="1" text="&#xf3ac; SHARE" class="icon btn-2"  /> 
           </grid-layout>
         </Card:CardView>   
-        <Card:CardView class="cardStyle" margin="10" elevation="40" radius="5">
-          <grid-layout rows="200, auto, auto" columns="auto, auto, *">
-              <image src="~/images/batman.jpg" stretch="aspectFill" colSpan="3" row="0" />
-              <label text="Batman wants to be friends?" class="info" textWrap="true" row="1" colSpan="3" />          
-              <button text="DECLINE" tap="goAway" row="2" col="0" />
-              <button text="ACCEPT" row="2" col="1" />
-          </grid-layout>
-        </Card:CardView>   
-        <Card:CardView class="cardStyle" margin="10" elevation="40" radius="5">
-          <grid-layout rows="200, auto, auto" columns="auto, auto, *">
-              <image src="~/images/batman.jpg" stretch="aspectFill" colSpan="3" row="0" />
-              <label text="Batman wants to be friends?" class="info" textWrap="true" row="1" colSpan="3" />          
-              <button text="DECLINE" tap="goAway" row="2" col="0" />
-              <button text="ACCEPT" row="2" col="1" />
-          </grid-layout>
-        </Card:CardView>   
-        <Card:CardView class="cardStyle" margin="10" elevation="40" radius="5">
-          <grid-layout rows="200, auto, auto" columns="auto, auto, *">
-              <image src="~/images/batman.jpg" stretch="aspectFill" colSpan="3" row="0" />
-              <label text="Batman wants to be friends?" class="info" textWrap="true" row="1" colSpan="3" />          
-              <button text="DECLINE" tap="goAway" row="2" col="0" />
-              <button text="ACCEPT" row="2" col="1" />
-          </grid-layout>
-        </Card:CardView>   
-        <Card:CardView class="cardStyle" margin="10" elevation="40" radius="5">
-          <grid-layout rows="200, auto, auto" columns="auto, auto, *">
-              <image src="~/images/batman.jpg" stretch="aspectFill" colSpan="3" row="0" />
-              <label text="Batman wants to be friends?" class="info" textWrap="true" row="1" colSpan="3" />          
-              <button text="DECLINE" tap="goAway" row="2" col="0" />
-              <button text="ACCEPT" row="2" col="1" />
-          </grid-layout>
-        </Card:CardView>
+        
       </StackLayout>
     </ScrollView>
 

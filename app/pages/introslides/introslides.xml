@@ -1,0 +1,34 @@
+<Page 
+  xmlns="http://schemas.nativescript.org/tns.xsd"
+  xmlns:Slides="nativescript-slides"
+  navigatingTo="onNavigatingTo"
+  actionBarHidden="true"
+  loaded="loadSlide">
+
+<StackLayout>
+    
+    <Slides:SlideContainer id="slides" 
+        pageIndicators="true" 
+        indicatorsColor="#fff"
+        loop="false">
+        <Slides:Slide class="slide-1">
+            <Label text="This is Panel 1"  />
+            <Label text=">" tap="next" />
+        </Slides:Slide>
+        <Slides:Slide class="slide-2">
+            <Label text="This is Panel 2"  />
+            <Label text=">" tap="next" />
+        </Slides:Slide>
+        <Slides:Slide class="slide-3">
+            <Label text="This is Panel 3"  />
+            <Label text=">" tap="next" />
+        </Slides:Slide>
+        <Slides:Slide class="slide-4">
+            <Label text="This is Panel 4"  />
+            <Label text="GET STARTED" class="get_started" tap="getStarted"></Label>
+        </Slides:Slide>
+    </Slides:SlideContainer>
+
+</StackLayout>
+
+</Page>

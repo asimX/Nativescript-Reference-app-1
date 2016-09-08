@@ -1,0 +1,42 @@
+<Page 
+  xmlns="http://schemas.nativescript.org/tns.xsd"
+  xmlns:Slides="nativescript-slides"
+  navigatingTo="onNavigatingTo"
+  loaded="loadCarouselInterval"
+  unloaded="clearCarouselInterval">
+
+  <Page.actionBar>
+      <ActionBar title="Carousel">
+          <NavigationButton icon="res://ic_arrow_back" tap="goBack"/>
+      </ActionBar>
+  </Page.actionBar>
+
+
+  <ScrollView>
+    <StackLayout>
+      
+      <Slides:SlideContainer id="slides" 
+        pageIndicators="true" 
+        indicatorsColor="#fff"
+        loop="true">
+        <Slides:Slide class="slide-1">
+            <Label text="This is Panel 1"  />
+        </Slides:Slide>
+        <Slides:Slide class="slide-2">
+            <Label text="This is Panel 2"  />
+        </Slides:Slide>
+        <Slides:Slide class="slide-3">
+            <Label text="This is Panel 3"  />
+        </Slides:Slide>
+        <Slides:Slide class="slide-4">
+            <Label text="This is Panel 4"  />
+        </Slides:Slide>
+        <Slides:Slide class="slide-5">
+            <Label text="This is Panel 5"  />
+        </Slides:Slide>
+      </Slides:SlideContainer>
+
+    </StackLayout>
+  </ScrollView>
+
+</Page>

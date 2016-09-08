@@ -2,20 +2,92 @@
   <ScrollView>
     <stack-layout>
       <Image class="drawer-bg" src="~/images/drawer-bg.jpg" stretch="aspectFill" />
-      <label text="Home" tap="navigate" class="{{ selectedPage == 'home' ? 'selected' : '' }}" />
-      <label text="Tabs" tap="navigate" class="{{ selectedPage == 'tabs' ? 'selected' : '' }}" />
-      <label text="Forms" tap="navigate" class="{{ selectedPage == 'forms' ? 'selected' : '' }}" />
-      <label text="HorizontalScrolling" tap="navigate" />
-      <label text="Dialogs" tap="navigate" />
-      <label text="Cards" tap="navigate" />
-      <label text="FAB" tap="navigate" />
-      <label text="CollapsingHeader" tap="navigate" />
-      <label text="TimeDatePicker" tap="navigate" />
-      <label text="Toast" tap="navigate" />
-      <label text="Waves" tap="navigate" />
-      <label text="Fonticons" tap="navigate" />
-      <label text="Lists" tap="navigate" />
-      <label text="Lists2" tap="navigate" />
+
+      <GridLayout columns="auto, *">
+        <label text="&#xf38f;" class="icon" col="0" />
+        <label text="Home" col="1" tap="navigate" class="{{ selectedPage == 'home' ? 'selected' : '' }}" />
+      </GridLayout>
+
+      <GridLayout columns="auto, *">
+        <label text="&#xf3a2;" class="icon" col="0" />
+        <label text="Tabs" col="1" tap="navigate" class="{{ selectedPage == 'tabs' ? 'selected' : '' }}" />
+      </GridLayout>
+
+      <GridLayout columns="auto, *">
+        <label text="&#xf37e;" class="icon" col="0" />
+        <label text="Forms" col="1" tap="navigate" class="{{ selectedPage == 'forms' ? 'selected' : '' }}" />
+      </GridLayout>
+
+      <GridLayout columns="auto, *">
+        <label text="&#xf427;" class="icon" col="0" />
+        <label text="HorizontalScrolling" col="1" tap="navigate" />
+      </GridLayout>
+
+      <GridLayout columns="auto, *">
+        <label text="&#xf100;" class="icon" col="0" />
+        <label text="Dialogs" col="1" tap="navigate" />
+      </GridLayout>
+
+      <GridLayout columns="auto, *">
+        <label text="&#xf371;" class="icon" col="0" />
+        <label text="Cards" col="1" tap="navigate" />
+      </GridLayout>
+
+      <GridLayout columns="auto, *">
+        <label text="&#xf21b;" class="icon" col="0" />
+        <label text="FAB" col="1" tap="navigate" />
+      </GridLayout>
+
+      <GridLayout columns="auto, *">
+        <label text="&#xf3c6;" class="icon" col="0" />
+        <label text="CollapsingHeader" col="1" tap="navigate" />
+      </GridLayout>
+
+      <GridLayout columns="auto, *">
+        <label text="&#xf26e;" class="icon" col="0" />
+        <label text="TimeDatePicker" col="1" tap="navigate" />
+      </GridLayout>
+
+      <GridLayout columns="auto, *">
+        <label text="&#xf26a;" class="icon" col="0" />
+        <label text="Toast" col="1" tap="navigate" />
+      </GridLayout>
+
+      <GridLayout columns="auto, *">
+        <label text="&#xf2ac;" class="icon" col="0" />
+        <label text="Waves" col="1" tap="navigate" />
+      </GridLayout>
+
+      <GridLayout columns="auto, *">
+        <label text="&#xf2fc;" class="icon" col="0" />
+        <label text="Fonticons" col="1" tap="navigate" />
+      </GridLayout>
+
+      <GridLayout columns="auto, *">
+        <label text="&#xf391;" class="icon" col="0" />
+        <label text="Lists" col="1" tap="navigate" />
+      </GridLayout>
+
+      <GridLayout columns="auto, *">
+        <label text="&#xf391;" class="icon" col="0" />
+        <label text="Lists2" col="1" tap="navigate" />
+      </GridLayout>
+
+      <GridLayout columns="auto, *">
+        <label text="&#xf148;" class="icon" col="0" />
+        <label text="Carousel" col="1" tap="navigate" />
+      </GridLayout>
+
+      <GridLayout columns="auto, *">
+        <label text="&#xf148;" class="icon" col="0" />
+        <label text="IntroSlides" col="1" tap="navigate" />
+      </GridLayout>
+      
+      <GridLayout columns="auto, *">
+        <label text="&#xf3b1;" class="icon" col="0" />
+        <label text="ActivityIndicator" col="1" tap="navigate" />
+      </GridLayout>
+
     </stack-layout>
   </ScrollView>
 </grid-layout>

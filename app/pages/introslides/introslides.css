@@ -1,0 +1,51 @@
+.slide-1{
+  background-color: darkslateblue;
+}
+ 
+.slide-2{
+  background-color: darkcyan;
+}
+.slide-3{
+  background-color: darkgreen;
+}
+ 
+.slide-4{
+  background-color: darkgoldenrod;
+}
+Label{
+  text-align: center;
+  width: 100%;
+  font-size: 35;
+  margin-top: 35;
+}
+
+.get_started {
+  font-size: 15;
+  color: #fff;
+}
+
+#slides {
+    height: 100%;
+}
+
+.slide-indicator-inactive{
+    background-color: #fff;
+    opacity : 0.4;
+    width : 8;
+    height : 8;
+    margin-left : 2.5;
+    margin-right : 2.5;
+    margin-top : -5;
+    border-radius : 4;
+}
+ 
+.slide-indicator-active{
+    background-color: #fff;
+    opacity : 0.9;
+    width : 8;
+    height : 8;
+    margin-left : 2.5;
+    margin-right : 2.5;
+    margin-top : -5;
+    border-radius : 4;
+}

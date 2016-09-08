@@ -1,0 +1,20 @@
+<Page 
+  xmlns="http://schemas.nativescript.org/tns.xsd"
+  navigatingTo="onNavigatingTo">
+
+  <Page.actionBar>
+      <ActionBar title="Activity Indicator">
+          <NavigationButton icon="res://ic_arrow_back" tap="goBack"/>
+      </ActionBar>
+  </Page.actionBar>
+
+    <ScrollView>
+        <StackLayout>
+
+            <ActivityIndicator busy="{{ loading }}" />
+
+            <Button text="Toogle busy state" tap="{{ toogleBusyState }}" />
+        </StackLayout>
+    </ScrollView>
+
+</Page>

@@ -1,6 +1,7 @@
 <Page 
   xmlns="http://schemas.nativescript.org/tns.xsd"
   xmlns:CheckBox="nativescript-checkbox"
+  xmlns:RL="nativescript-ripple"
   navigatingTo="onNavigatingTo">
 
   <Page.actionBar>
@@ -23,13 +24,15 @@
             
               <ListView items="{{ myItems }}" class="list">
                 <ListView.itemTemplate>
-                  <GridLayout columns="*, auto">
-                    <StackLayout col="0">
-                      <Label text="{{ title }}" class="heading" />
-                      <Label text="{{ about }}" class="sub_heading" />
-                    </StackLayout>
-                    <Switch checked="false" class="toggle_in_list" col="1" />
-                  </GridLayout>
+                  <RL:Ripple>
+                    <GridLayout columns="*, auto">
+                      <StackLayout col="0">
+                        <Label text="{{ title }}" class="heading" />
+                        <Label text="{{ about }}" class="sub_heading" />
+                      </StackLayout>
+                      <Switch checked="false" class="toggle_in_list" col="1" />
+                    </GridLayout>
+                  </RL:Ripple>
                 </ListView.itemTemplate>
               </ListView>
 
@@ -43,13 +46,15 @@
 
               <ListView items="{{ myItems }}" class="list">
                 <ListView.itemTemplate>
-                  <GridLayout columns="auto, *">
-                    <CheckBox:CheckBox text="" class="cb_in_list" checked="false" col="0" />
-                    <StackLayout col="1">
-                      <Label text="{{ title }}" class="heading" />
-                      <Label text="{{ about }}" class="sub_heading" />
-                    </StackLayout>
-                  </GridLayout>
+                  <RL:Ripple>
+                    <GridLayout columns="*, auto">
+                      <StackLayout col="0">
+                        <Label text="{{ title }}" class="heading" />
+                        <Label text="{{ about }}" class="sub_heading" />
+                      </StackLayout>
+                      <CheckBox:CheckBox text="" class="cb_in_list" checked="false" col="1" />
+                    </GridLayout>
+                  </RL:Ripple>
                 </ListView.itemTemplate>
               </ListView>
 
@@ -57,7 +62,7 @@
           </TabViewItem.view>
         </TabViewItem>
 
-        <TabViewItem android:title="Avatar">
+        <TabViewItem android:title="Pull to refresh">
           <TabViewItem.view>
             <StackLayout>
 
@@ -67,7 +72,7 @@
           </TabViewItem.view>
         </TabViewItem>
 
-        <TabViewItem android:title="No Lines">
+        <TabViewItem android:title="Sliding">
           <TabViewItem.view>
             <StackLayout>
 

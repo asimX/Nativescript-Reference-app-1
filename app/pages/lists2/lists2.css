@@ -36,10 +36,10 @@
 }
 
 .list .cb_in_list {
-    margin-left: 10;
+    margin-right: 15;
 }
 
 .list .toggle_in_list {
-    margin-right: 20;
+    margin-right: 10;
     color: #ffab00;
 }

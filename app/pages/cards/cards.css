@@ -1,6 +1,35 @@
-.cardStyle {
+.card {
     background-color: #efefef;
     color: #222;
+}
+
+.card .heading {
+    font-size: 20;
+}
+
+.card .body {
+    font-size: 13;
+}
+
+.card .avatar {
+    border-radius: 20;
+    height: 40;
+    width: 40;
+    margin-left: 20;
+}
+
+.card .username {
+    font-size: 15;
+}
+
+.card .btn-1 {
+    color: #4527a0;
+    font-size: 15;
+}
+
+.card .btn-2 {
+    color: #4527a0;
+    horizontal-align: right;
 }
 
 button {

@@ -8,22 +8,19 @@
       </ActionBar>
     </Page.actionBar>
 
-      <GridLayout rows="auto, *">
+    <GridLayout rows="auto, *">
 
       <ListView items="{{ myItems }}" row="1">
         <ListView.itemTemplate>
-          <StackLayout>
-            <Label text="{{ title }}" />
-          </StackLayout>
+          <Label text="{{ title }}" />
         </ListView.itemTemplate>
       </ListView>
 
-      <AbsoluteLayout row="1" cssClass="fabContainer" >
-        <FAB:fab tap="fabTap"
-                icon="res://fav"
-                rippleColor="#f1f1f1"
-                class="fab-button" />
-      </AbsoluteLayout>
+      <FAB:fab tap="fabTap"
+          row="1"
+          icon="res://fav"
+          rippleColor="#f1f1f1"
+          class="fab-button" />
       
     </GridLayout>
 
