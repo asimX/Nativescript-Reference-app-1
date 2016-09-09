@@ -1,0 +1,21 @@
+<Page 
+  xmlns="http://schemas.nativescript.org/tns.xsd"
+  navigatingTo="onNavigatingTo">
+
+  <Page.actionBar>
+      <ActionBar title="Snackbar">
+          <NavigationButton icon="res://ic_arrow_back" tap="goBack"/>
+      </ActionBar>
+  </Page.actionBar>
+
+
+  <ScrollView>
+    <StackLayout>
+      <TextField hint="Snack message" text="{{ message }}" />
+      <TextField hint="Snack action text" text="{{ action }}" />
+      <Button text="Simple Snackbar" tap="{{ showSimpleSnackbar }}" />
+      <Button text="Action Snackbar" tap="{{ showActionSnackbar }}" />
+    </StackLayout>
+  </ScrollView>
+
+</Page>

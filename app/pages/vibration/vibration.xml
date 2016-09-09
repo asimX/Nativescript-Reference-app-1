@@ -1,0 +1,19 @@
+<Page 
+  xmlns="http://schemas.nativescript.org/tns.xsd"
+  navigatingTo="onNavigatingTo">
+
+  <Page.actionBar>
+      <ActionBar title="Vibration">
+          <NavigationButton icon="res://ic_arrow_back" tap="goBack"/>
+      </ActionBar>
+  </Page.actionBar>
+
+
+  <ScrollView>
+    <StackLayout>
+      <TextField hint="Duration (1000 => 1s)" text="{{ vibrateDuration }}" keyboardType="number" />
+      <Button text="Vibrate" tap="{{ vibrate }}" />
+    </StackLayout>
+  </ScrollView>
+
+</Page>

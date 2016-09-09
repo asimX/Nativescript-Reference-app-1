@@ -3,6 +3,7 @@ var frame = require("ui/frame");
 
 function createViewModel() {
     var viewModel = new Observable();
+    viewModel.selectedIndex = 2;
     
     viewModel.goBack = function() {
         frame.topmost().goBack();

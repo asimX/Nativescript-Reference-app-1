@@ -3,89 +3,119 @@
     <stack-layout>
       <Image class="drawer-bg" src="~/images/drawer-bg.jpg" stretch="aspectFill" />
 
-      <GridLayout columns="auto, *">
+      <GridLayout columns="75, *">
         <label text="&#xf38f;" class="icon" col="0" />
         <label text="Home" col="1" tap="navigate" class="{{ selectedPage == 'home' ? 'selected' : '' }}" />
       </GridLayout>
 
-      <GridLayout columns="auto, *">
+      <GridLayout columns="75, *">
         <label text="&#xf3a2;" class="icon" col="0" />
         <label text="Tabs" col="1" tap="navigate" class="{{ selectedPage == 'tabs' ? 'selected' : '' }}" />
       </GridLayout>
 
-      <GridLayout columns="auto, *">
+      <GridLayout columns="75, *">
         <label text="&#xf37e;" class="icon" col="0" />
         <label text="Forms" col="1" tap="navigate" class="{{ selectedPage == 'forms' ? 'selected' : '' }}" />
       </GridLayout>
 
-      <GridLayout columns="auto, *">
+      <GridLayout columns="75, *">
+        <label text="&#xf37e;" class="icon" col="0" />
+        <label text="Forms2" col="1" tap="navigate" />
+      </GridLayout>
+
+      <GridLayout columns="75, *">
         <label text="&#xf427;" class="icon" col="0" />
         <label text="HorizontalScrolling" col="1" tap="navigate" />
       </GridLayout>
 
-      <GridLayout columns="auto, *">
+      <GridLayout columns="75, *">
         <label text="&#xf100;" class="icon" col="0" />
         <label text="Dialogs" col="1" tap="navigate" />
       </GridLayout>
 
-      <GridLayout columns="auto, *">
+      <GridLayout columns="75, *">
         <label text="&#xf371;" class="icon" col="0" />
         <label text="Cards" col="1" tap="navigate" />
       </GridLayout>
 
-      <GridLayout columns="auto, *">
+      <GridLayout columns="75, *">
         <label text="&#xf21b;" class="icon" col="0" />
         <label text="FAB" col="1" tap="navigate" />
       </GridLayout>
 
-      <GridLayout columns="auto, *">
+      <GridLayout columns="75, *">
         <label text="&#xf3c6;" class="icon" col="0" />
         <label text="CollapsingHeader" col="1" tap="navigate" />
       </GridLayout>
 
-      <GridLayout columns="auto, *">
+      <GridLayout columns="75, *">
         <label text="&#xf26e;" class="icon" col="0" />
         <label text="TimeDatePicker" col="1" tap="navigate" />
       </GridLayout>
 
-      <GridLayout columns="auto, *">
+      <GridLayout columns="75, *">
         <label text="&#xf26a;" class="icon" col="0" />
         <label text="Toast" col="1" tap="navigate" />
       </GridLayout>
 
-      <GridLayout columns="auto, *">
+      <GridLayout columns="75, *">
         <label text="&#xf2ac;" class="icon" col="0" />
         <label text="Waves" col="1" tap="navigate" />
       </GridLayout>
 
-      <GridLayout columns="auto, *">
+      <GridLayout columns="75, *">
         <label text="&#xf2fc;" class="icon" col="0" />
         <label text="Fonticons" col="1" tap="navigate" />
       </GridLayout>
 
-      <GridLayout columns="auto, *">
+      <GridLayout columns="75, *">
         <label text="&#xf391;" class="icon" col="0" />
         <label text="Lists" col="1" tap="navigate" />
       </GridLayout>
 
-      <GridLayout columns="auto, *">
+      <GridLayout columns="75, *">
         <label text="&#xf391;" class="icon" col="0" />
         <label text="Lists2" col="1" tap="navigate" />
       </GridLayout>
 
-      <GridLayout columns="auto, *">
+      <GridLayout columns="75, *">
         <label text="&#xf148;" class="icon" col="0" />
         <label text="Carousel" col="1" tap="navigate" />
       </GridLayout>
 
-      <GridLayout columns="auto, *">
+      <GridLayout columns="75, *">
         <label text="&#xf148;" class="icon" col="0" />
         <label text="IntroSlides" col="1" tap="navigate" />
       </GridLayout>
       
-      <GridLayout columns="auto, *">
+      <GridLayout columns="75, *">
         <label text="&#xf3b1;" class="icon" col="0" />
         <label text="ActivityIndicator" col="1" tap="navigate" />
+      </GridLayout>
+      
+      <GridLayout columns="75, *">
+        <label text="&#xf2d2;" class="icon" col="0" />
+        <label text="Vibration" col="1" tap="navigate" />
+      </GridLayout>
+      
+      <GridLayout columns="75, *">
+        <label text="&#xf4cd;" class="icon" col="0" />
+        <label text="VideoPlayer" col="1" tap="navigate" />
+      </GridLayout>
+      
+      <GridLayout columns="75, *">
+        <label text="&#xf3dc;" class="icon" col="0" />
+        <label text="Snackbar" col="1" tap="navigate" />
+      </GridLayout>
+
+      <GridLayout columns="75, *">
+        <label text="&#xf268;" class="icon" col="0" />
+        <label text="ProgressBar" col="1" tap="navigate" />
+      </GridLayout>
+
+      <GridLayout columns="75, *">
+        <label text="&#xf415;" class="icon" col="0" />
+        <label text="Parallax" col="1" tap="navigate" />
       </GridLayout>
 
     </stack-layout>

@@ -26,9 +26,6 @@ action-bar {
   color: white;
   padding: 25 0 0 0; /* fix for action bar hiding under translucent statusbar **/
 }
-label {
-  margin: 20;
-}
 
 
 

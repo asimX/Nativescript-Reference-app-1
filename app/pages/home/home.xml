@@ -8,7 +8,8 @@
   <ActionBar title="NativeScript">
     <NavigationButton icon="res://ic_menu" tap="toggleDrawer"/>
     <Android>
-      <ActionItem tap="gotoSearch" icon="res://ic_magnify" />
+      <ActionItem tap="gotoSearch" icon="res://ic_magnify" visibility="{{ selectedIndex == 0 ? 'visible' : 'collapsed' }}" />
+      <ActionItem icon="res://fav" visibility="{{ selectedIndex != 0 ? 'visible' : 'collapsed' }}" />
       <ActionItem text="Profile" android.position="popup"></ActionItem>
       <ActionItem text="Settings" android.position="popup"></ActionItem>
     </Android>
@@ -25,7 +26,7 @@
 
   <GridLayout>
     <TabView tabsBackgroundColor="#4527a0"
-      android:cssClass="android-tab-view" 
+      selectedIndex="{{ selectedIndex }}"
       color="#fff"
       android:selectedColor="#ffab00">
       <TabView.items>

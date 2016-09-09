@@ -9,10 +9,9 @@
   </Page.actionBar>
 
   <GridLayout>
-    <TabView id="tabView" 
+    <TabView
       selectedIndex="{{ selectedIndex }}" 
-      tabsBackgroundColor="#4527a0"
-      android:cssClass="android-tab-view" 
+      tabsBackgroundColor="#4527a0" 
       android:selectedColor="#ffab00">
       <TabView.items>
 
@@ -36,6 +35,7 @@
           <TabViewItem.view>
             <StackLayout>
                 <Label text="Tab 3"/>
+                <Label text="You can set any tab to be the leading tab when the view is loaded"/>
             </StackLayout>
           </TabViewItem.view>
         </TabViewItem>

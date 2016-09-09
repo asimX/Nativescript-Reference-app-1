@@ -12,6 +12,7 @@ module.exports.createViewModel = function createViewModel() {
     var viewModel = new Observable();
     viewModel.counter = 42;
     viewModel.message = getMessage(viewModel.counter);
+    viewModel.selectedIndex = 0;
 
     viewModel.onTap = function() {
         this.counter--;

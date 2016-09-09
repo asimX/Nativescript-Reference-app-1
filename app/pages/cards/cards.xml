@@ -1,5 +1,6 @@
 <Page 
   xmlns="http://schemas.nativescript.org/tns.xsd"
+  xmlns:RL="nativescript-ripple"
   xmlns:Card="nativescript-cardview">
 
     <Page.actionBar>
@@ -13,43 +14,103 @@
 
         <label text="Header cards" />
 
-        <Card:CardView class="card" margin="10" elevation="40" radius="5">
+        <Card:CardView class="card" margin="10" elevation="5" radius="5">
+          <RL:Ripple>
+            <StackLayout>
+              <Label class="heading" text="Header here" />
+              <Label class="body" text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum adipisci consequatur quis tenetur rerum repudiandae harum, esse aliquid minima amet. Fuga quam rerum facilis architecto, soluta nemo tenetur eveniet aliquam?" textWrap="true" />
+            </StackLayout>
+          </RL:Ripple>
+        </Card:CardView> 
+
+        <Card:CardView class="card card_blue" margin="10" elevation="10" radius="5">
           <StackLayout>
-            <Label class="heading" text="Header here" />
-            <Label class="body" text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum adipisci consequatur quis tenetur rerum repudiandae harum, esse aliquid minima amet. Fuga quam rerum facilis architecto, soluta nemo tenetur eveniet aliquam?" textWrap="true" />
+            <Label class="heading" text="Unlimited music now" />
+            <Label class="body" text="Listen to your favourite artists and albulms whenever and wherever, online and offline." textWrap="true" />
+            <RL:Ripple>
+              <Label text="LISTEN" class="btn_action" style="text-align: left" />
+            </RL:Ripple>
           </StackLayout>
         </Card:CardView> 
 
+
+
         <label text="Image cards" />
 
-        <Card:CardView class="card" margin="10" elevation="40" radius="5">
-          <grid-layout rows="225, auto">
-              <Image src="~/images/batman.jpg" stretch="aspectFill" row="0" />
+        <Card:CardView class="card" margin="10" elevation="5" radius="5">
+          <grid-layout rows="225, auto, auto">
+              <Image src="~/images/card-bg.jpg" stretch="aspectFill" row="0" />
               <StackLayout row="1">
                 <Label text="Header here" class="heading" /> 
                 <Label class="body" text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum adipisci consequatur quis tenetur rerum repudiandae harum, esse aliquid minima amet. Fuga quam rerum facilis architecto, soluta nemo tenetur eveniet aliquam?" textWrap="true" />
               </StackLayout>
+              <StackLayout orientation="horizontal" row="2">
+                <RL:Ripple>
+                  <Label text="SHARE" class="btn_action" />
+                </RL:Ripple>
+                <RL:Ripple>
+                  <Label text="EXPLORE" class="btn_action" />
+                </RL:Ripple>
+              </StackLayout>
           </grid-layout>
         </Card:CardView> 
 
+        <Card:CardView class="card card_blue" margin="10" elevation="5" radius="5">
+          <RL:Ripple rippleColor="#fff">
+            <grid-layout columns="*, auto">
+                <StackLayout col="0">
+                  <Label text="Supermodel" class="heading" textWrap="true" /> 
+                  <Label class="body" text="Foster the people" textWrap="true" />
+                </StackLayout>
+                <Image src="~/images/card-bg.jpg" class="thumbnail" stretch="aspectFill" col="1" />
+            </grid-layout>
+          </RL:Ripple>
+        </Card:CardView> 
+
+        <Card:CardView class="card" margin="10" elevation="5" radius="5">
+          <grid-layout rows="225, auto">
+              <Image src="~/images/card-bg.jpg" stretch="aspectFill" row="0" />
+              <StackLayout row="1" orientation="horizontal" style="horizontal-align: right">
+                <RL:Ripple>
+                  <Label text="&#xf141;" class="icon btn_icon_action" />
+                </RL:Ripple>
+                <RL:Ripple>
+                  <Label text="&#xf36b;" class="icon btn_icon_action" />
+                </RL:Ripple>
+                <RL:Ripple>
+                  <Label text="&#xf3ac;" class="icon btn_icon_action" />
+                </RL:Ripple>
+              </StackLayout>
+          </grid-layout>
+        </Card:CardView> 
+
+
         <label text="Social cards" />
 
-        <Card:CardView class="card" margin="10" elevation="40" radius="5">
-          <grid-layout rows="60, 200, auto, auto" columns="auto, auto">
+        <Card:CardView class="card" margin="10" elevation="5" radius="5">
+          <grid-layout rows="auto, 200, *, auto">
 
-              <Image row="0" col="0" class="avatar" src="~/images/avatar1.png"/>
+            <StackLayout row="0" orientation="horizontal">
+              <Image class="avatar" src="~/images/avatar1.png" />
+              <Label text="John Doe" class="title" />
+            </StackLayout>
 
-              <Label row="0" col="1" text="John Doe" class="username" />
+            <Image src="~/images/batman.jpg" stretch="aspectFill" row="1" />
 
-              <Image src="~/images/batman.jpg" stretch="aspectFill" colSpan="2" row="1" />
+            <StackLayout row="2">
+              <Label text="Header here" class="heading" /> 
+              <Label class="body" text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum adipisci consequatur quis tenetur rerum repudiandae harum, esse aliquid minima amet. Fuga quam rerum facilis architecto, soluta nemo tenetur eveniet aliquam?" textWrap="true"/>
+            </StackLayout>
 
-              <StackLayout row="1" colSpan="3">
-                <Label text="Header here" class="heading" /> 
-                <Label class="body" text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum adipisci consequatur quis tenetur rerum repudiandae harum, esse aliquid minima amet. Fuga quam rerum facilis architecto, soluta nemo tenetur eveniet aliquam?" textWrap="true"/>
-              </StackLayout>
+            <StackLayout row="3" orientation="horizontal">
+              <RL:Ripple>
+                <Label text="&#xf243; TWEET" class="icon btn_action" /> 
+              </RL:Ripple>
+              <RL:Ripple>
+                <Label text="&#xf3ac; SHARE" class="icon btn_action" />
+              </RL:Ripple>
+            </StackLayout> 
 
-              <Label row="2" col="0" text="&#xf243; TWEET" class="icon btn-1" /> 
-              <Label row="2" col="1" text="&#xf3ac; SHARE" class="icon btn-2"  /> 
           </grid-layout>
         </Card:CardView>   
         

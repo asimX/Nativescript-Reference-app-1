@@ -11,7 +11,8 @@ function createViewModel() {
             'item 2',
             'item 3',
             'item 4'
-        ]
+        ],
+        message: ''
     });
     
     viewModel.goBack = function() {

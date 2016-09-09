@@ -1,0 +1,20 @@
+<Page 
+  xmlns="http://schemas.nativescript.org/tns.xsd"
+  navigatingTo="onNavigatingTo">
+
+  <Page.actionBar>
+      <ActionBar title="Progress Bar">
+          <NavigationButton icon="res://ic_arrow_back" tap="goBack"/>
+      </ActionBar>
+  </Page.actionBar>
+
+    <ScrollView>
+        <StackLayout>
+
+            <Progress value="{{ progress }}" maxValue="100" />
+            <Slider value="{{ progress }}" maxValue="100" minValue="0" />
+            
+        </StackLayout>
+    </ScrollView>
+
+</Page>

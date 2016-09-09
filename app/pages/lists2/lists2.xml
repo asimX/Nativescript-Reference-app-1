@@ -2,6 +2,7 @@
   xmlns="http://schemas.nativescript.org/tns.xsd"
   xmlns:CheckBox="nativescript-checkbox"
   xmlns:RL="nativescript-ripple"
+  xmlns:PullRefresh="nativescript-pulltorefresh"
   navigatingTo="onNavigatingTo">
 
   <Page.actionBar>
@@ -66,7 +67,16 @@
           <TabViewItem.view>
             <StackLayout>
 
-              
+              <PullRefresh:PullToRefresh refresh="refreshList" class="ptr">
+                <ListView items="{{ myItems }}" class="list">
+                  <ListView.itemTemplate>
+                    <StackLayout>
+                      <Label text="{{ title }}" class="heading" />
+                      <Label text="{{ about }}" class="sub_heading" />
+                    </StackLayout>
+                  </ListView.itemTemplate>
+                </ListView>
+              </PullRefresh:PullToRefresh>
 
             </StackLayout>
           </TabViewItem.view>

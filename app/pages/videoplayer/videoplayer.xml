@@ -1,0 +1,26 @@
+<Page 
+  xmlns="http://schemas.nativescript.org/tns.xsd"
+  xmlns:VideoPlayer="nativescript-videoplayer"
+  navigatingTo="onNavigatingTo">
+
+  <Page.actionBar>
+      <ActionBar title="Video Player">
+          <NavigationButton icon="res://ic_arrow_back" tap="goBack"/>
+      </ActionBar>
+  </Page.actionBar>
+
+
+  <ScrollView>
+    <StackLayout>
+      <VideoPlayer:Video
+        loop="true"
+        controls="true"
+        loaded="videoplayerLoaded" 
+        finished="videoFinished" 
+        autoplay="true" 
+        height="300" 
+        src="~/videos/sample-video.mp4" />
+    </StackLayout>
+  </ScrollView>
+
+</Page>
