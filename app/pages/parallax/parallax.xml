@@ -9,7 +9,7 @@
       </ActionBar>
   </Page.actionBar>
 
-  <parallax:ParallaxView controlsToFade="headerLabel,headerLabel2" bounce=true>
+  <parallax:ParallaxView controlsToFade="headerLabel,headerLabel2" bounce="true">
 
       <parallax:Header class="header-template">
           <Label id="headerLabel" text="Parallax"></Label>
